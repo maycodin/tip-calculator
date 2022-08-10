@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --border-radius: 10px;
+}
+ html, body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container{
+    width: 75%;
+    margin: 0 auto;
+ }
+.calculator{
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.head-text{
+    text-align: center;
+}
+.calculator-left, .calculator-right{
+    width: 50%;
+    min-height: 100%;
+}
+.calculator-left{
+    margin-right: 20px;
+}
+.cal-input{
+    margin-bottom: 2rem;
+}
+.cal-input label, .cal-tips-title{
+    color: hsl(184, 14%, 56%);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.form-input{
+    width: 100%;
+    display: flex;
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.2rem 0;
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+.form-input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.form-input span{
+    width: 45px;
+    text-align: center;
+    color: hsl(185, 41%, 84%);
+}
+.form-input input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    padding-right: 15px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+.form-input input:focus{
+    outline: none;
+}
+.form-input input[type=number]::-webkit-inner-spin-button, .form-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.cal-tips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.cal-tip{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.cal-tip.active{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+.cal-tip-custom{
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+
+.calculator-right{
+    background-color: hsl(183, 100%, 15%);
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--border-radius );
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tip{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tip-info .tip-title{
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 100%);
+}
+.tip-info .tip-subtitle{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+}
+.tip-cash{
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+}
+.tip-action{
+    margin-top: 
+}
+.tip-reset-btn{
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 20%);
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: hsl(183, 100%, 15%);
+}
+.tip-reset-btn:focus{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .calculator{
+        flex-direction: column;
+    }
+    .calculator-left, .calculator-right{
+        width: 100%;
+        min-height: 100%;
+}
+.cal-tip{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 48%;
+    text-align: center;
+}
+.cal-tip-custom{
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.calculator{
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+html, body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    height: 145vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container{
+    width: 75%;
+    margin: 0 auto;
+ }
+}
+
+
+
+
+
+
+
+/* frontend mentor styles */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
